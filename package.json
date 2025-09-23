@@ -1,0 +1,13 @@
+{
+  "name": "js-bugfix-project",
+  "version": "1.0.0",
+  "description": "Projeto para demonstração de correção de bugs em JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "keywords": ["bugfix", "javascript", "git"],
+  "author": "Seu Nome",
+  "license": "MIT"
+}
