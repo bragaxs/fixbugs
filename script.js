@@ -1,12 +1,12 @@
 // Funções com bugs para demonstração
 
 function calcularMedia(numeros) {
-    // Bug 1: Não trata array vazio corretamente
     if (!numeros.length) {
-        return 0; // Deveria retornar null ou undefined
+        return null; // Corrigido: retorna null em vez de 0
     }
     return numeros.reduce((a, b) => a + b, 0) / numeros.length;
 }
+
 
 function encontrarMaximo(numeros) {
     // Bug 2: Não funciona com array vazio e números negativos
