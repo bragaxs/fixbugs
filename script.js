@@ -9,15 +9,16 @@ function calcularMedia(numeros) {
 }
 
 function encontrarMaximo(numeros) {
-    // Bug 2: Não funciona com array vazio e números negativos
-    let maximo = 0; // Bug: não considera números negativos
+    if (numeros.length === 0) return null; // Corrigido: trata array vazio
+    let maximo = numeros[0]; // Corrigido: considera negativos
     for (let num of numeros) {
         if (num > maximo) {
             maximo = num;
         }
     }
-    return numeros.length === 0 ? null : maximo;
+    return maximo;
 }
+
 
 function filtrarPares(numeros) {
     // Bug 3: Não filtra corretamente valores não numéricos
